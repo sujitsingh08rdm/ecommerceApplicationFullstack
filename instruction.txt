@@ -283,7 +283,9 @@ when user order we need to remove the ttoal stock by the quantity of order made.
 5. root dir : client, public dir: ./dist, deploy static site,
 6. We got aCORS error to fix this we need to change our clientURL in ENV. GO to dashboard. change the CLIENT_BASE URL. and deploy again. its working. but on refresh its routes not getttign found and cookies get reset.
 7.  change rewrite/redirect rules. with /* to /index.html . now ma uall deaploy with clear chache and deploy.
-8. page is reloading and its wprking, will work on cache. go to auth controller make secure as true.commit this
+8. page is reloading and its wprking, will work on cache. go to auth controller make secure as true.commit this. then maek chagne in cookie in auth controller. we send he token as res. then in initial stae set token. also on fullfill of loginUSer we will setToken and store it in sessionStorage. then in check auth we need to pass the token as autherization. and make chnage is authmiddleware. and appjsx use eefect of cehckauth will take otken as argument. and reset teh state on logout. make changes in header for logout.
+9.
+
 
 ---END---
 
