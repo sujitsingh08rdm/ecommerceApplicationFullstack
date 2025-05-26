@@ -55,7 +55,9 @@ export default function ShoppingHome() {
   const { productList, productDetails } = useSelector(
     (state) => state.shopProducts
   );
-  const { featureImageList } = useSelector((state) => state.commonForm);
+  const { featureImageList } = useSelector((state) => state.commonFeature);
+
+  console.log(featureImageList);
 
   const [openDetailsDialog, setOpenDetailsDialog] = useState(false);
 

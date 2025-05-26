@@ -44,7 +44,7 @@ const commonSlice = createSlice({
       })
       .addCase(getFeatureImages.rejected, (state) => {
         state.isLoading = false;
-        state.searchResults = [];
+        state.featureImageList = [];
       });
   },
 });

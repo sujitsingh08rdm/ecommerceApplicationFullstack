@@ -278,6 +278,12 @@ when user order we need to remove the ttoal stock by the quantity of order made.
 --- Deploy ---
 1. create dotnev and in server config it. and create three var for Coulidnary name key and secret. similary do for paypal, mongoDB URL
 2. also for client add the API URL ignore the .env file in gitignore.
+3. Create repo and publish the change to the github. now go to render and on + click on webserives. root dir : server, build command: npm install.start command: node server.js, 
+4. for env copy paste from our env file. and deploy web services. serivce is live.. get the link and now creata static site.
+5. root dir : client, public dir: ./dist, deploy static site,
+6. We got aCORS error to fix this we need to change our clientURL in ENV. GO to dashboard. change the CLIENT_BASE URL. and deploy again. its working. but on refresh its routes not getttign found and cookies get reset.
+7.  change rewrite/redirect rules. with /* to /index.html . now ma uall deaploy with clear chache and deploy.
+8.
 
 ---END---
 
